@@ -10,12 +10,13 @@ jobs:
     name: "Push ${{ matrix.image }}"
 
     runs-on: ubuntu-latest
-    
+
     strategy:
       fail-fast: false
       matrix:
         image:
             - node-12-eas
+            - node-14-eas
 
     steps:
       -
