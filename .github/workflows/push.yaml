@@ -17,6 +17,7 @@ jobs:
         image:
             - node-12-eas
             - node-14-eas
+            - wrangler
 
     steps:
       -
