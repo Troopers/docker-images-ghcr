@@ -4,6 +4,8 @@ on:
   push:
     branches:
       - 'main'
+    tags:
+      - '*'
 
 jobs:
   push:
@@ -34,4 +36,6 @@ jobs:
         with:
           context: "{{defaultContext}}:${{ matrix.image }}"
           push: true
-          tags: ghcr.io/troopers/${{ matrix.image }}
+          tags: |
+            ghcr.io/troopers/${{ matrix.image }}:${{github.ref_name}}
+            ghcr.io/troopers/${{ matrix.image }}:latest
