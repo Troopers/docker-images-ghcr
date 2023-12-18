@@ -18,6 +18,8 @@ jobs:
       matrix:
         image:
           - cypress-16-docker-compose
+          - docker
+          - docker-compose
           - node-12-eas
           - node-14-eas
           - node-16-curl-tidy
