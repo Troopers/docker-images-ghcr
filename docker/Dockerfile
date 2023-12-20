@@ -1,1 +1,1 @@
-FROM docker:latest
+FROM docker/compose:latest
