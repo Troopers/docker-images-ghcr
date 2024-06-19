@@ -20,6 +20,7 @@ jobs:
           - cypress-16-docker-compose
           - node-12-eas
           - node-14-eas
+          - node-18-eas
           - node-16-curl-tidy
           - node-16-curl-tidy-yarn-3
 
